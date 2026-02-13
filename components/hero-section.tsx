@@ -6,7 +6,7 @@ export default function HeroSection() {
     <section
       className="
         w-full max-h-dvh
-        bg-[url('/hero/rockgym24-hero.jpg')]
+        bg-[url('/hero/rockgym24-hero.webp')]
         bg-cover bg-center bg-no-repeat
       "
     >
