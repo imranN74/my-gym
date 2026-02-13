@@ -61,7 +61,7 @@ export default function Stat({
           <CountUp
             end={end}
             suffix={suffix}
-            duration={2.5}
+            duration={3}
             className="block text-6xl font-extrabold text-yellow-400"
           />
         )}

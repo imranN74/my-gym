@@ -40,21 +40,21 @@ export default function StatCounter() {
           "
         >
           <Stat
-            end={200}
+            end={700}
             suffix="+"
             label="Active Members"
             image="/stats/active-members.jpg"
             icon={UsersRound}
           />
           <Stat
-            end={10}
-            suffix="K+"
+            end={1270}
+            suffix="+"
             label="Clients Trained"
             image="/stats/active-members.jpg"
             icon={Users}
           />
           <Stat
-            end={15}
+            end={50}
             suffix="+"
             label="Professional Trainers"
             image="/stats/active-members.jpg"
