@@ -13,6 +13,7 @@ export default function WhatsAppFloat() {
 
   return (
     <a
+      title="whatsapp"
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"

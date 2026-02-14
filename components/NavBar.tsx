@@ -21,7 +21,7 @@ export default function NavBar() {
       >
         <div className="relative">
           <div className="absolute inset-0 bg-yellow-400 rounded-lg blur opacity-50 group-hover:opacity-75 transition duration-300 animate-pulse" />
-          <div className="relative bg-transparent rounded-lg p-1 border border-yellow-400/70">
+          <div className="relative bg-transparent rounded-lg sm:p-1 border-yellow-400/70">
             {/* <span className="text-yellow-400 font-black text-xl">⚡</span> */}
             <Image
               src="/logo/rockgym24-logo.png"
@@ -33,14 +33,16 @@ export default function NavBar() {
             />
           </div>
         </div>
-        <div className="flex flex-col">
+        <div
+          className="hidden sm:flex sm:flex-col 
+            "
+        >
           <span
             className="
       font-bold text-2xl
       dm-serif-display-regular
       bg-linear-to-r
       from-zinc-400
-      
       to-yellow-400
       bg-clip-text
       text-transparent
