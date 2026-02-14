@@ -10,7 +10,7 @@ export default function HeroSection() {
         bg-cover bg-center bg-no-repeat
       "
     >
-      <motion.div className="h-screen flex flex-col justify-center ml-5 sm:ml-16 gap-7 sm:gap-4">
+      <motion.div className="h-screen flex flex-col justify-center mx-3 sm:mx-0 sm:ml-16 gap-7 sm:gap-4">
         {/* Bottom Yellow Glow */}
         <div className="absolute bottom-0 left-0 w-full h-70 bg-linear-to-t from-yellow-400/40 to-transparent pointer-events-none" />
 
@@ -43,21 +43,24 @@ export default function HeroSection() {
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 1 }}
-          transition={{ duration: 0.8, ease: easeInOut }}
-          className="flex flex-col w-1/2 ml-4 sm:flex-row gap-5 sm:ml-24"
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: easeInOut }}
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-6"
         >
           <a
             href="/membership"
-            className="cursor-pointer px-6 py-3 mt-2 bg-yellow-400 hover:bg-yellow-300 text-gray-950 font-black rounded-lg transition-all duration-300 uppercase text-sm tracking-wider shadow-lg shadow-yellow-400/40 text-center"
+            className="inline-flex items-center justify-center px-6 sm:px-9 py-3 sm:py-4 bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 text-gray-900 font-black rounded-xl transition-all duration-300 uppercase text-xs sm:text-sm tracking-wider shadow-lg shadow-yellow-400/60 hover:shadow-yellow-400/80 hover:scale-110 active:scale-95 cursor-pointer relative overflow-hidden group"
           >
-            Book Now
+            <span className="relative z-10">Book Free Trial</span>
+            <div className="absolute inset-0 bg-linear-to-r from-yellow-300 to-yellow-500 opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
           </a>
           <a
             href="/#membership"
-            className="cursor-pointer px-6 py-3 mt-2 bg-yellow-400 hover:bg-yellow-300 text-gray-950 font-black rounded-lg transition-all duration-300 uppercase text-sm tracking-wider shadow-lg shadow-yellow-400/40"
+            className="inline-flex items-center justify-center px-6 sm:px-9 py-3 sm:py-4 bg-gray-900/80 hover:bg-gray-800 border-2 border-yellow-400 text-yellow-400 font-black rounded-xl transition-all duration-300 uppercase text-xs sm:text-sm tracking-wider shadow-lg shadow-yellow-400/40 hover:shadow-yellow-400/60 hover:scale-110 active:scale-95 cursor-pointer group"
           >
-            Membership Plans
+            <span className="group-hover:text-yellow-300 transition-colors duration-300">
+              Membership Plans
+            </span>
           </a>
         </motion.div>
       </motion.div>
